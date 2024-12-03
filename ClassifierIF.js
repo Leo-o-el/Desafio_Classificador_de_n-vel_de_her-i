@@ -1,6 +1,8 @@
 let heroName = "Lukesky";
 let heroExperience = 4587; 
 
+while (heroExperience < 11000) {
+
 if (heroExperience < 1000){
         console.log("O Herói de nome " + heroName + " está no nível de Ferro");
     }else if (heroExperience <= 2000){
@@ -18,4 +20,5 @@ if (heroExperience < 1000){
     }else {
         console.log("O Herói de nome " + heroName + " está no nível de Radiante");
 }
-
+heroExperience += 1000;
+}
