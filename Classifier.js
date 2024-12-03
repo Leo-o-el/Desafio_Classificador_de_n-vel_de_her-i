@@ -1,11 +1,11 @@
 //variáveis para armazenar o nome, e a quantidade de experiência (XP) de um herói:
 let heroName = "Lukesky";
-let heroExperience = "1";
-let nivel = true;//posso fazer a variavel receber texto depois de números
-//A estrutura de repetição:
-while (heroExperience < 10002) {                                                                 //risco de um valor pra cima de 10002 não rodar.
-//Uma estrutura de decisão para apresentar alguma mensagem:
-    switch (heroExperience) {
+let heroExperience = 999;
+let nivel = " ";
+//A estrutura de repetição enquanto a experiência for menor que 10999:
+while (heroExperience < 11000) {                             
+//Uma estrutura de decisão para verificar o nível do herói:
+    switch (true) {
         case heroExperience <= 1000:
             nivel = "Ferro";
             console.log ("O Herói de nome " + heroName + " está no nível de " + nivel); 
@@ -38,4 +38,6 @@ while (heroExperience < 10002) {                                                
             nivel = "Radiante";
             console.log ("O Herói de nome " + heroName + " está no nível de " + nivel);                   
     }
+// Incremento para evitar loop infinito:
+heroExperience += 1000; 
 }
